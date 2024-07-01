@@ -6,7 +6,7 @@
 
 
 ## Getting Started
-CoinMarketCap sniper bot that buys BSC tokens when you recieve Telegram notification from this channel https://t.me/CMC_CG_listing_alerts or this channel https://t.me/CMC_fastest_alerts use links and join channels. 
+CoinMarketCap sniper bot that buys BSC tokens 
 This bot uses Smart Chain BNB to buy tokens not WBNB.
 
 #### First, install sniper.exe in releases
