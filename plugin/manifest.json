@@ -1,0 +1,75 @@
+{
+	"id": "typescript.webpack.wakatime",
+	"name": "Wakatime",
+	"version": "1.0.0",
+	"main": "index.html",
+	"host": {
+		"app": "PS",
+		"minVersion": "23.0.0"
+	},
+	"manifestVersion": 5,
+	"featureFlags": {
+		"enableSWCSupport": true
+	},
+	"requiredPermissions": {
+		"network": {
+			"domains": ["https://wakatime.com", "https://api.wakatime.com"]
+		},
+		"launchProcess": {
+			"schemes": ["https"]
+		}
+	},
+	"entrypoints": [
+		{
+			"type": "panel",
+			"id": "wakatime",
+			"label": {
+				"default": "Wakatime"
+			},
+			"minimumSize": {
+				"width": 310,
+				"height": 220
+			},
+			"maximumSize": {
+				"width": 2000,
+				"height": 2000
+			},
+			"preferredDockedSize": {
+				"width": 330,
+				"height": 400
+			},
+			"preferredFloatingSize": {
+				"width": 300,
+				"height": 400
+			},
+			"icons": [
+				{
+					"width": 32,
+					"height": 32,
+					"path": "icons/dark.png",
+					"scale": [1, 2],
+					"theme": ["dark", "darkest"],
+					"species": ["generic"]
+				},
+				{
+					"width": 32,
+					"height": 32,
+					"path": "icons/light.png",
+					"scale": [1, 2],
+					"theme": ["lightest", "light"],
+					"species": ["generic"]
+				}
+			]
+		}
+	],
+	"icons": [
+		{
+			"width": 48,
+			"height": 48,
+			"path": "icons/plugin-icon.png",
+			"scale": [1, 2],
+			"theme": ["darkest", "dark", "medium", "lightest", "light", "all"],
+			"species": ["pluginList"]
+		}
+	]
+}

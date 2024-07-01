@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="typescript.webpack.wakatime" ExtensionBundleVersion="1.0" Version="6.0">
+    <ExtensionList>
+        <Extension Id="typescript.webpack.wakatime.panel" Version="1.0"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <!--<Host Name="PHSP" Version="[0.0,99.9]"/>-->
+            <!--<Host Name="PHXS" Version="[0.0,99.9]"/>-->
+            <Host Name="IDSN" Version="[0.0,99.9]"/>
+            <Host Name="AICY" Version="[0.0,99.9]"/>
+            <Host Name="ILST" Version="[0.0,99.9]"/>
+            <Host Name="PPRO" Version="[0.0,99.9]"/>
+            <Host Name="PRLD" Version="[0.0,99.9]"/>
+            <Host Name="AEFT" Version="[0.0,99.9]"/>
+            <Host Name="FLPR" Version="[0.0,99.9]"/>
+            <Host Name="AUDT" Version="[0.0,99.9]"/>
+            <Host Name="DRWV" Version="[0.0,99.9]"/>
+            <Host Name="KBRG" Version="[0.0,99.9]"/>
+            <Host Name="RUSH" Version="[0.0,99.9]"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="11.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="typescript.webpack.wakatime.panel">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                        <Parameter>--mixed-context</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                    <!-- If AutoVisible is false, uncomment this (not supported by some hosts) -->
+                    <!--
+                    <StartOn>
+                    	<Event>applicationActivate</Event>
+						<Event>com.adobe.csxs.events.ApplicationActivate</Event>
+                    </StartOn>
+                    -->
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Wakatime</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>400</Height>
+                            <Width>350</Width>
+                        </Size>
+                        <MinSize>
+                            <Height>250</Height>
+                            <Width>250</Width>
+                        </MinSize>
+                        <MaxSize>
+                            <Height>2000</Height>
+                            <Width>2000</Width>
+                        </MaxSize>
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./icons/light.png</Icon>
+						<Icon Type="DarkNormal">./icons/dark.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
